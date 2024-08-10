@@ -1,0 +1,137 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.nav {
+    background-color: #404447;
+    padding: 15px;
+    text-align: center;
+}
+
+.nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.box {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 23%;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.box img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.box h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.box h4 {
+    color: #3f4144;
+    margin-bottom: 15px;
+}
+
+.box button {
+    background-color: #4f5256;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.box button:hover {
+    background-color: #005bb5;
+}
+
+
+.img {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.img img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.img h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.img p {
+    text-align: justify;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.img button {
+    background-color: #3f4143;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.img button:hover {
+    background-color: #005bb5;
+}
+
+
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 80%;
+    }
+
+    .img {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
